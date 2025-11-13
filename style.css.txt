@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffdda9;
+}
+
+.product-launch-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.product-content {
+  color: #334155;
+  margin-bottom: 30px;
+}
+
+.product-title {
+  font-size: 32px;
+  color: #8e62d9;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 18px;
+  color: #334155;
+  margin-bottom: 20px;
+}
+
+.product-btn {
+  background-color: #8e62d9;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product-btn:hover {
+  opacity: 0.9;
+}
+
+.product-image {
+  width: 180px;
+  align-self: center;
+}
+
+/* 📱 For screens >= 900px */
+@media screen and (min-width: 900px) {
+  .product-launch-section {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 80px;
+  }
+
+  .product-content {
+    flex-basis: 50%;
+  }
+
+  .product-image {
+    width: 300px;
+    align-self: flex-end;
+  }
+}
